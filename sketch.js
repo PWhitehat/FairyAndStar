@@ -40,11 +40,23 @@ function setup() {
 	
 }
 
+function keyPressed() {
+
+	if (keyCode === 32) {
+
+		
+
+	}
+
+}
 
 function draw() {
   background(bgImg);
 
   Engine.update(engine);
+  
+  star.x = starBody.position.x;
+  star.y = starBody.position.y;
 
   drawSprites();
 
