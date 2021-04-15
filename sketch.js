@@ -57,6 +57,22 @@ function keyPressed() {
 	
 	}
 
+	if (follow === 0) {
+
+		if (keyCode === 39) {
+
+			fairyBody.position.x = fairyBody.position.x + 10;
+	
+		}
+	
+		if (keyCode === 37) {
+	
+			fairyBody.position.x = fairyBody.position.x - 10;
+	
+		}
+
+	}
+
 }
 
 function draw() {
