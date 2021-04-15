@@ -57,20 +57,16 @@ function keyPressed() {
 	
 	}
 
-	if (follow === 0) {
+	if (keyCode === 39) {
 
-		if (keyCode === 39) {
-
-			fairyBody.position.x = fairyBody.position.x + 10;
+		fairyBody.position.x = fairyBody.position.x + 10;
 	
-		}
+	}
 	
-		if (keyCode === 37) {
+	if (keyCode === 37) {
 	
-			fairyBody.position.x = fairyBody.position.x - 10;
+		fairyBody.position.x = fairyBody.position.x - 10;
 	
-		}
-
 	}
 
 }
@@ -87,12 +83,12 @@ function draw() {
 
   //}
 
-if (follow === 1) {
+  if (follow === 1) {
 
-  star.x = starBody.position.x;
-  star.y = starBody.position.y;  
+  	star.x = starBody.position.x;
+  	star.y = starBody.position.y;  
 
-}
+  }
 
   fairy.x = fairyBody.position.x;
   fairy.y = fairyBody.position.y;  
