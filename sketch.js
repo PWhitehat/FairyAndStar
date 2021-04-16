@@ -32,7 +32,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	fairy_options = {isStatic: true}
+	fairy_options = {isStatic: true, friction: 1}
 	fairyBody = Bodies.rectangle(500, 520, 350, 20, fairy_options);
 	World.add(world, fairyBody);
 
@@ -43,7 +43,7 @@ function setup() {
 function makeStar() {
 
 	star_options = {isStatic: false}
-	starBody = Bodies.circle(650 , 30 , 5 , star_options);
+	starBody = Bodies.rectangle(650 , 30 , 20, 20, star_options);
 	World.add(world, starBody);
 
 }
@@ -59,13 +59,13 @@ function keyPressed() {
 
 	if (keyCode === 39) {
 
-		fairyBody.position.x = fairyBody.position.x + 10;
+		fairyBody.position.x = fairyBody.position.x + 30;
 	
 	}
 	
 	if (keyCode === 37) {
 	
-		fairyBody.position.x = fairyBody.position.x - 10;
+		fairyBody.position.x = fairyBody.position.x - 30;
 	
 	}
 
